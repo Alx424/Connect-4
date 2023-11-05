@@ -247,7 +247,7 @@ class Main {
         } else if (board[5][3] == ANSI_BLUE+"b"+ANSI_RESET && board[4][4] == ANSI_BLUE+"b"+ANSI_RESET && board[3][5] == ANSI_BLUE+"b"+ANSI_RESET && board[2][6] == ANSI_BLUE+"b"+ANSI_RESET) {
           System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
-        } else if (!Arrays.asList(board[0]).includes(" ")) {
+        } else if (!contains(board[0], " ")) {
           System.out.println("It's a tie!");
           done = true;
         }
@@ -278,5 +278,14 @@ class Main {
     System.out.println("("+board[4][0]+") ("+board[4][1]+") ("+board[4][2]+") ("+board[4][3]+") ("+board[4][4]+") ("+board[4][5]+") ("+board[4][6]+")");
     System.out.println("("+board[5][0]+") ("+board[5][1]+") ("+board[5][2]+") ("+board[5][3]+") ("+board[5][4]+") ("+board[5][5]+") ("+board[5][6]+")");
     System.out.println(" 1   2   3   4   5   6   7");
+  }
+  
+  public static boolean contains(String[] array, String key) {
+    for (String element : array) {
+      if (element.equals(key)) {
+        return true;
+      }
+    }
+    return false;
   }
 }
