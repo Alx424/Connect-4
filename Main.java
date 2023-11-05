@@ -55,197 +55,200 @@ class Main {
     //horizontal lines
     for (int i = 1; i<6; i++) {
       if (board[i][0] == ANSI_RED+"r"+ANSI_RESET && board[i][1] == ANSI_RED+"r"+ANSI_RESET && board[i][2] == ANSI_RED+"r"+ANSI_RESET && board[i][3] == ANSI_RED+"r"+ANSI_RESET)  {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[i][1] == ANSI_RED+"r"+ANSI_RESET && board[i][2] == ANSI_RED+"r"+ANSI_RESET && board[i][3] == ANSI_RED+"r"+ANSI_RESET && board[i][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[i][2] == ANSI_RED+"r"+ANSI_RESET && board[i][3] == ANSI_RED+"r"+ANSI_RESET && board[i][4] == ANSI_RED+"r"+ANSI_RESET && board[i][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[i][3] == ANSI_RED+"r"+ANSI_RESET && board[i][4] == ANSI_RED+"r"+ANSI_RESET && board[i][5] == ANSI_RED+"r"+ANSI_RESET && board[i][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[i][0] == ANSI_BLUE+"b"+ANSI_RESET && board[i][1] == ANSI_BLUE+"b"+ANSI_RESET && board[i][2] == ANSI_BLUE+"b"+ANSI_RESET && board[i][3] == ANSI_BLUE+"b"+ANSI_RESET)  {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[i][1] == ANSI_BLUE+"b"+ANSI_RESET && board[i][2] == ANSI_BLUE+"b"+ANSI_RESET && board[i][3] == ANSI_BLUE+"b"+ANSI_RESET && board[i][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[i][2] == ANSI_BLUE+"b"+ANSI_RESET && board[i][3] == ANSI_BLUE+"b"+ANSI_RESET && board[i][4] == ANSI_BLUE+"b"+ANSI_RESET && board[i][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[i][3] == ANSI_BLUE+"b"+ANSI_RESET && board[i][4] == ANSI_BLUE+"b"+ANSI_RESET && board[i][5] == ANSI_BLUE+"b"+ANSI_RESET && board[i][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         }
     }
     //vertical lines
     for(int i = 0; i < 7; i++) {
       if (board[0][i] == ANSI_RED+"r"+ANSI_RESET && board[1][i] == ANSI_RED+"r"+ANSI_RESET && board[2][i] == ANSI_RED+"r"+ANSI_RESET && board[3][i] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[1][i] == ANSI_RED+"r"+ANSI_RESET && board[2][i] == ANSI_RED+"r"+ANSI_RESET && board[3][i] == ANSI_RED+"r"+ANSI_RESET && board[4][i] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[2][i] == "\u001b[31mr\u001b[0m" && board[3][i] == "\u001b[31mr\u001b[0m" && board[4][i] == "\u001b[31mr\u001b[0m" && board[5][i] == "\u001b[31mr\u001b[0m") {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[0][i] == ANSI_BLUE+"b"+ANSI_RESET && board[1][i] == ANSI_BLUE+"b"+ANSI_RESET && board[2][i] == ANSI_BLUE+"b"+ANSI_RESET && board[3][i] == ANSI_BLUE+"b"+ANSI_RESET) {
-        System.out.println(bluename+" wins!");
+        System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
         done = true;
       } else if (board[1][i] == ANSI_BLUE+"b"+ANSI_RESET && board[2][i] == ANSI_BLUE+"b"+ANSI_RESET && board[3][i] =="b" && board[4][i] == ANSI_BLUE+"b"+ANSI_RESET) {
-        System.out.println(bluename+" wins!");
+        System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
         done = true;
       } else if (board[2][i] == ANSI_BLUE+"b"+ANSI_RESET && board[3][i] == ANSI_BLUE+"b"+ANSI_RESET && board[4][i] == ANSI_BLUE+"b"+ANSI_RESET && board[5][i] == ANSI_BLUE+"b"+ANSI_RESET){
-        System.out.println(bluename+" wins!");
+        System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
         done = true;
       }
     }
       //diagonal lines
       if (board[0][0] == ANSI_RED+"r"+ANSI_RESET && board[1][1] == ANSI_RED+"r"+ANSI_RESET && board[2][2] == ANSI_RED+"r"+ANSI_RESET && board[3][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[1][1] == ANSI_RED+"r"+ANSI_RESET && board[2][2] == ANSI_RED+"r"+ANSI_RESET && board[3][3] == ANSI_RED+"r"+ANSI_RESET && board[4][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[2][2] == ANSI_RED+"r"+ANSI_RESET && board[3][3] == ANSI_RED+"r"+ANSI_RESET && board[4][4] == ANSI_RED+"r"+ANSI_RESET && board[5][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[1][0] == ANSI_RED+"r"+ANSI_RESET && board[2][1] == ANSI_RED+"r"+ANSI_RESET && board[3][2] == ANSI_RED+"r"+ANSI_RESET && board[4][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[2][1] == ANSI_RED+"r"+ANSI_RESET && board[3][2] == ANSI_RED+"r"+ANSI_RESET && board[4][3] == ANSI_RED+"r"+ANSI_RESET && board[5][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[0][1] == ANSI_RED+"r"+ANSI_RESET && board[1][2] == ANSI_RED+"r"+ANSI_RESET && board[2][3] == ANSI_RED+"r"+ANSI_RESET && board[3][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[1][2] == ANSI_RED+"r"+ANSI_RESET && board[2][3] == ANSI_RED+"r"+ANSI_RESET && board[3][4] == ANSI_RED+"r"+ANSI_RESET && board[4][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[2][3] == ANSI_RED+"r"+ANSI_RESET && board[3][4] == ANSI_RED+"r"+ANSI_RESET && board[4][5] == ANSI_RED+"r"+ANSI_RESET && board[5][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[0][2] == ANSI_RED+"r"+ANSI_RESET && board[1][3] == ANSI_RED+"r"+ANSI_RESET && board[2][4] == ANSI_RED+"r"+ANSI_RESET && board[3][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[1][3] == ANSI_RED+"r"+ANSI_RESET && board[2][4] == ANSI_RED+"r"+ANSI_RESET && board[3][5] == ANSI_RED+"r"+ANSI_RESET && board[4][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[0][3] == ANSI_RED+"r"+ANSI_RESET && board[1][4] == ANSI_RED+"r"+ANSI_RESET && board[2][5] == ANSI_RED+"r"+ANSI_RESET && board[3][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[2][0] == ANSI_RED+"r"+ANSI_RESET && board[3][1] == ANSI_RED+"r"+ANSI_RESET && board[4][2] == ANSI_RED+"r"+ANSI_RESET && board[5][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[3][0] == ANSI_RED+"r"+ANSI_RESET && board[2][1] == ANSI_RED+"r"+ANSI_RESET && board[1][2] == ANSI_RED+"r"+ANSI_RESET && board[0][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[4][0] == ANSI_RED+"r"+ANSI_RESET && board[3][1] == ANSI_RED+"r"+ANSI_RESET && board[2][2] == ANSI_RED+"r"+ANSI_RESET && board[1][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[3][1] == ANSI_RED+"r"+ANSI_RESET && board[2][2] == ANSI_RED+"r"+ANSI_RESET && board[1][3] == ANSI_RED+"r"+ANSI_RESET && board[0][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[5][0] == ANSI_RED+"r"+ANSI_RESET && board[4][1] == ANSI_RED+"r"+ANSI_RESET && board[3][2] == ANSI_RED+"r"+ANSI_RESET && board[2][3] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[4][1] == ANSI_RED+"r"+ANSI_RESET && board[3][2] == ANSI_RED+"r"+ANSI_RESET && board[2][3] == ANSI_RED+"r"+ANSI_RESET && board[1][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[3][2] == ANSI_RED+"r"+ANSI_RESET && board[2][3] == ANSI_RED+"r"+ANSI_RESET && board[1][4] == ANSI_RED+"r"+ANSI_RESET && board[0][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[5][1] == ANSI_RED+"r"+ANSI_RESET && board[4][2] == ANSI_RED+"r"+ANSI_RESET && board[3][3] == ANSI_RED+"r"+ANSI_RESET && board[2][4] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[4][2] == ANSI_RED+"r"+ANSI_RESET && board[3][3] == ANSI_RED+"r"+ANSI_RESET && board[2][4] == ANSI_RED+"r"+ANSI_RESET && board[1][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[3][3] == ANSI_RED+"r"+ANSI_RESET && board[2][4] == ANSI_RED+"r"+ANSI_RESET && board[1][5] == ANSI_RED+"r"+ANSI_RESET && board[0][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[5][2] == ANSI_RED+"r"+ANSI_RESET && board[4][3] == ANSI_RED+"r"+ANSI_RESET && board[3][4] == ANSI_RED+"r"+ANSI_RESET && board[2][5] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[4][3] == ANSI_RED+"r"+ANSI_RESET && board[3][4] == ANSI_RED+"r"+ANSI_RESET && board[2][5] == ANSI_RED+"r"+ANSI_RESET && board[1][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[5][3] == ANSI_RED+"r"+ANSI_RESET && board[4][4] == ANSI_RED+"r"+ANSI_RESET && board[3][5] == ANSI_RED+"r"+ANSI_RESET && board[2][6] == ANSI_RED+"r"+ANSI_RESET) {
-        System.out.println(redname+" wins!");
+        System.out.println("\u001b[31m"+redname+"\u001b[0m wins!");
         done = true;
       } else if (board[0][0] == ANSI_BLUE+"b"+ANSI_RESET && board[1][1] == ANSI_BLUE+"b"+ANSI_RESET && board[2][2] == ANSI_BLUE+"b"+ANSI_RESET && board[3][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[1][1] == ANSI_BLUE+"b"+ANSI_RESET && board[2][2] == ANSI_BLUE+"b"+ANSI_RESET && board[3][3] == ANSI_BLUE+"b"+ANSI_RESET && board[4][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[2][2] == ANSI_BLUE+"b"+ANSI_RESET && board[3][3] == ANSI_BLUE+"b"+ANSI_RESET && board[4][4] == ANSI_BLUE+"b"+ANSI_RESET && board[5][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[1][0] == ANSI_BLUE+"b"+ANSI_RESET && board[2][1] == ANSI_BLUE+"b"+ANSI_RESET && board[3][2] == ANSI_BLUE+"b"+ANSI_RESET && board[4][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[2][1] == ANSI_BLUE+"b"+ANSI_RESET && board[3][2] == ANSI_BLUE+"b"+ANSI_RESET && board[4][3] == ANSI_BLUE+"b"+ANSI_RESET && board[5][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[0][1] == ANSI_BLUE+"b"+ANSI_RESET && board[1][2] == ANSI_BLUE+"b"+ANSI_RESET && board[2][3] == ANSI_BLUE+"b"+ANSI_RESET && board[3][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[1][2] == ANSI_BLUE+"b"+ANSI_RESET && board[2][3] == ANSI_BLUE+"b"+ANSI_RESET && board[3][4] == ANSI_BLUE+"b"+ANSI_RESET && board[4][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[2][3] == ANSI_BLUE+"b"+ANSI_RESET && board[3][4] == ANSI_BLUE+"b"+ANSI_RESET && board[4][5] == ANSI_BLUE+"b"+ANSI_RESET && board[5][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[0][2] == ANSI_BLUE+"b"+ANSI_RESET && board[1][3] == ANSI_BLUE+"b"+ANSI_RESET && board[2][4] == ANSI_BLUE+"b"+ANSI_RESET && board[3][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[1][3] == ANSI_BLUE+"b"+ANSI_RESET && board[2][4] == ANSI_BLUE+"b"+ANSI_RESET && board[3][5] == ANSI_BLUE+"b"+ANSI_RESET && board[4][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[0][3] == ANSI_BLUE+"b"+ANSI_RESET && board[1][4] == ANSI_BLUE+"b"+ANSI_RESET && board[2][5] == ANSI_BLUE+"b"+ANSI_RESET && board[3][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[2][0] == ANSI_BLUE+"b"+ANSI_RESET && board[3][1] == ANSI_BLUE+"b"+ANSI_RESET && board[4][2] == ANSI_BLUE+"b"+ANSI_RESET && board[5][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[3][0] == ANSI_BLUE+"b"+ANSI_RESET && board[2][1] == ANSI_BLUE+"b"+ANSI_RESET && board[1][2] == ANSI_BLUE+"b"+ANSI_RESET && board[0][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[4][0] == ANSI_BLUE+"b"+ANSI_RESET && board[3][1] == ANSI_BLUE+"b"+ANSI_RESET && board[2][2] == ANSI_BLUE+"b"+ANSI_RESET && board[1][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[3][1] == ANSI_BLUE+"b"+ANSI_RESET && board[2][2] == ANSI_BLUE+"b"+ANSI_RESET && board[1][3] == ANSI_BLUE+"b"+ANSI_RESET && board[0][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[5][0] == ANSI_BLUE+"b"+ANSI_RESET && board[4][1] == ANSI_BLUE+"b"+ANSI_RESET && board[3][2] == ANSI_BLUE+"b"+ANSI_RESET && board[2][3] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[4][1] == ANSI_BLUE+"b"+ANSI_RESET && board[3][2] == ANSI_BLUE+"b"+ANSI_RESET && board[2][3] == ANSI_BLUE+"b"+ANSI_RESET && board[1][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[3][2] == ANSI_BLUE+"b"+ANSI_RESET && board[2][3] == ANSI_BLUE+"b"+ANSI_RESET && board[1][4] == ANSI_BLUE+"b"+ANSI_RESET && board[0][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[5][1] == ANSI_BLUE+"b"+ANSI_RESET && board[4][2] == ANSI_BLUE+"b"+ANSI_RESET && board[3][3] == ANSI_BLUE+"b"+ANSI_RESET && board[2][4] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[4][2] == ANSI_BLUE+"b"+ANSI_RESET && board[3][3] == ANSI_BLUE+"b"+ANSI_RESET && board[2][4] == ANSI_BLUE+"b"+ANSI_RESET && board[1][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[3][3] == ANSI_BLUE+"b"+ANSI_RESET && board[2][4] == ANSI_BLUE+"b"+ANSI_RESET && board[1][5] == ANSI_BLUE+"b"+ANSI_RESET && board[0][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[5][2] == ANSI_BLUE+"b"+ANSI_RESET && board[4][3] == ANSI_BLUE+"b"+ANSI_RESET && board[3][4] == ANSI_BLUE+"b"+ANSI_RESET && board[2][5] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[4][3] == ANSI_BLUE+"b"+ANSI_RESET && board[3][4] == ANSI_BLUE+"b"+ANSI_RESET && board[2][5] == ANSI_BLUE+"b"+ANSI_RESET && board[1][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
           done = true;
         } else if (board[5][3] == ANSI_BLUE+"b"+ANSI_RESET && board[4][4] == ANSI_BLUE+"b"+ANSI_RESET && board[3][5] == ANSI_BLUE+"b"+ANSI_RESET && board[2][6] == ANSI_BLUE+"b"+ANSI_RESET) {
-          System.out.println(bluename+" wins!");
+          System.out.println("\u001B[34m"+bluename+"\u001b[0m wins!");
+          done = true;
+        } else if (!Arrays.asList(board[0]).includes(" ")) {
+          System.out.println("It's a tie!");
           done = true;
         }
       return done;
